@@ -1,0 +1,22 @@
+/* Base styles and overrides specific to App structure */
+.app-container {
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.global-3d-canvas-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  pointer-events: none; /* Let clicks pass through to content */
+}
+
+.content-layer {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+}
