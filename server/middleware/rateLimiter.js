@@ -3,7 +3,7 @@ import rateLimit from "express-rate-limit";
 export const appointmentLimiter = rateLimit({
   windowMs: 60 * 60 * 1000,
 
-  max: 5,
+  max: 15,
 
   standardHeaders: true,
 
@@ -12,6 +12,6 @@ export const appointmentLimiter = rateLimit({
   message: {
     success: false,
     message:
-      "Maximum 5 appointment requests are allowed per hour from this IP.",
+      "Maximum 15 appointment requests are allowed per hour from this IP.",
   },
 });
